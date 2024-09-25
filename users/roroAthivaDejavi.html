@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batara | Roro Athifa Dejavi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style_member.css" />
+
+    <!-- Web Logo -->
+    <link rel="icon" href="/assets/Logo Batara Jumbotron.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar Start -->
+      <nav>
+        <a class="navBackToggle" href="../user.html">
+          <div class="backToggle">
+            <img
+              class="backIcon"
+              src="/assets/icons/back.png"
+              alt=""
+              width="20px"
+            />
+            <p>Back</p>
+          </div>
+        </a>
+
+        <div class="searchBox">
+          <input
+            type="text"
+            placeholder="Cari nama kamu.."
+            class="nameInput"
+            id="searchInput"
+            autocomplete="off"
+          />
+          <button class="searchButton" onclick="searchUser()">
+            <img src="/assets/icons/search.png" alt="" width="20px" />
+          </button>
+        </div>
+      </nav>
+      <!-- navbar End -->
+
+      <div class="hero">
+        <img
+          src="../assets/woman picture.jpg"
+          alt=""
+          width="280px"
+          style="border-radius: 50%"
+        />
+        <h1>Roro Athifa Dejavi</h1>
+      </div>
+
+      <div class="biodata">
+        <table>
+          <tbody>
+            <tr>
+              <td>Nama Lengkap</td>
+              <td>Roro Athifa Dejavi</td>
+            </tr>
+            <tr>
+              <td>Nama Panggilan</td>
+              <td>Roro</td>
+            </tr>
+            <tr>
+              <td>Tempat Lahir</td>
+              <td>Kebumen</td>
+            </tr>
+            <tr>
+              <td>Tanggal Lahir</td>
+              <td>14 Juli 2010</td>
+            </tr>
+            <tr>
+              <td>Umur</td>
+              <td>14 Tahun</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br />
+    <br />
+    <script src="../js/script_member.js"></script>
+  </body>
+</html>

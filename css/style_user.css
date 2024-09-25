@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* navbar Start */
+nav {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  background-color: orange;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9999;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.backToggle {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding-left: 20px;
+}
+
+.backIcon {
+  opacity: 0;
+  transition: 0.2s;
+  margin-right: -5px;
+}
+
+.navBackToggle:hover .backIcon {
+  opacity: 1;
+  margin-right: 7px;
+}
+
+.searchBox {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.searchBox input {
+  width: 200px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+.searchButton {
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px;
+  background-color: white;
+  cursor: pointer;
+}
+/* navbar End */
+
+/* home Start */
+.home {
+  padding-top: 55px;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.hero h1 {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: orange;
+}
+/* home End */
+
+/* Struktur Start */
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse; /* agar tidak ada gap antar kolom */
+}
+
+caption {
+  padding-bottom: 20px;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+th {
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+td {
+  border-top: 1px solid black;
+  border-right: 2px solid black;
+  padding: 0px 10px;
+}
+td:first-child {
+  text-align: center;
+  font-weight: 600;
+}
+/* Struktur End */
+
+@media screen and (max-width: 475px) {
+  .backToggle {
+    padding-left: 10px;
+  }
+
+  .searchBox {
+    padding-right: 10px;
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .searchBox input {
+    width: 150px;
+    font-size: 12px;
+  }
+}

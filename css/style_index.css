@@ -1,0 +1,253 @@
+:root {
+  --base-blue: #0947d5;
+  --light-blue: #1f59dd;
+  --lighten-blue: #4976dd;
+  --dark-blue: #06339c;
+  --darken-blue: #052879;
+}
+
+/* animate root Start */
+#textArea {
+  opacity: 0;
+}
+.animate__fadeIn {
+  opacity: 1 !important;
+}
+
+#cardArea {
+  opacity: 0;
+}
+.animate__fadeIn {
+  opacity: 1 !important;
+}
+/* animate root End */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* navbar Start */
+nav {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+  position: fixed;
+  z-index: 9999;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+.branding h1 {
+  color: orange;
+  user-select: none;
+}
+
+nav .login {
+  margin-right: 2rem;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  padding: 0px 15px;
+  transition: 0.2s;
+  font-weight: 300;
+}
+
+nav .login:hover {
+  border-bottom: 5px solid orange;
+}
+
+nav .login a {
+  text-decoration: none;
+  color: orange;
+}
+/* navbar End */
+
+/* home Start */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  padding-top: 55px;
+}
+
+.imgHero {
+  width: 100%;
+  height: 80vh;
+  background: url(../assets/foto\ batara.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.textArea {
+  padding: 20px 20px 0px 35px;
+}
+
+.textArea h1 {
+  color: var(--base-blue);
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.textArea h3 {
+  color: var(--base-blue);
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: justify;
+  line-height: 26px;
+}
+
+.textArea .button {
+  display: flex;
+  gap: 1rem;
+}
+
+.button a {
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.button .daftar {
+  background-color: var(--base-blue);
+  border: 3px solid var(--base-blue);
+  color: white;
+}
+
+.button .login {
+  border: 3px solid var(--base-blue);
+}
+/* home End */
+
+/* kegiatan Start */
+.kegiatan {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-color: var(--base-blue);
+  color: white;
+}
+
+.textTitle {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cardArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cardContainer {
+  width: 18rem;
+  height: 20rem;
+  background-color: white;
+  color: var(--darken-blue);
+  margin: 0px 10px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.cardText h4 {
+  font-size: 18px;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+.cardText a {
+  background-color: var(--base-blue);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+/* kegiatan End */
+
+/* about Start */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.about p {
+  text-align: justify;
+  padding: 0px 100px;
+  font-size: 18px;
+}
+/* about End */
+
+/* sosmed Start */
+.sosmed {
+  width: 100%;
+  min-height: 60vh;
+  padding-bottom: 50px;
+  background-color: var(--base-blue);
+  color: white;
+}
+
+.sosmed .cardArea .cardContainer {
+  height: 24rem;
+}
+
+.sosmed .cardArea .cardContainer .cardText {
+  margin-top: 35px;
+}
+/* sosmed End */
+
+/* RESPONSIVE AREA */
+@media screen and (max-width: 425px) {
+  .textArea {
+    padding: 10px 10px 0px 15px;
+  }
+
+  .textArea h1 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .textArea h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .textTitle {
+    font-size: 26px;
+  }
+
+  .about p {
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+}
