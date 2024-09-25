@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batara | User</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style_user.css" />
+
+    <!-- Web Logo -->
+    <link rel="icon" href="/assets/Logo Batara Jumbotron.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar Start -->
+      <nav>
+        <a class="navBackToggle" href="index.html">
+          <div class="backToggle">
+            <img
+              class="backIcon"
+              src="/assets/icons/back.png"
+              alt=""
+              width="20px"
+            />
+            <p>Back</p>
+          </div>
+        </a>
+
+        <div class="searchBox">
+          <input
+            type="text"
+            placeholder="Cari nama kamu.."
+            class="nameInput"
+            id="searchInput"
+            autocomplete="off"
+          />
+          <button class="searchButton" onclick="searchUser()">
+            <img src="/assets/icons/search.png" alt="" width="20px" />
+          </button>
+        </div>
+      </nav>
+      <!-- navbar End -->
+
+      <!-- home Start -->
+      <div class="home" id="home">
+        <div class="hero">
+          <img
+            src="/assets/Logo Batara Jumbotron.png"
+            alt="Logo Batara"
+            width="280px"
+            class="animate__animated animate__pulse animate__infinite"
+          />
+          <h1
+            class="animate__animated animate__swing animate__slower animate__infinite"
+          >
+            BARISAN TARUNA KARYA
+          </h1>
+        </div>
+      </div>
+      <!-- home End -->
+
+      <!-- struktur Start -->
+      <div class="anggota" id="anggota">
+        <table>
+          <caption>
+            Struktur Batara
+          </caption>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Jabatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Deni Eko Krisdianto</td>
+              <td>Pembina Batara</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ade Cahyadi</td>
+              <td>Pembina Batara</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Akbar Wahyudi</td>
+              <td>Ketua Batara</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Alfan Athallah Syafala</td>
+              <td>Wakil Ketua Batara</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mutiara Aulia Iskandar</td>
+              <td>Bendahara 1</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Aisyah Puji Lestari</td>
+              <td>Bendahara 2</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Khalista Halwa Syatifa</td>
+              <td>Bendahara 3</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Ahmad Maulana Zuhdi</td>
+              <td>Sekretaris 1</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Amara Desfianti</td>
+              <td>Sekretaris 2</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Yuana Putri Arishandi</td>
+              <td>Sekretaris 3</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Akbar Maulana Hakim</td>
+              <td>Multimedia 1</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Bagas Aditya Pratama</td>
+              <td>Multimedia 2</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Galan Ahdiansyah</td>
+              <td>Koor. Lap 1</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Anton Patoni</td>
+              <td>Koor. Lap 2</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Aqila Abidillah Annas</td>
+              <td>Koor. Lap 3</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Dian Ruby Maulana</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Ivan Bagas Mahesa</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Azril Bayu Pambuko</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Kezia Febriani</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>Roro Athiva Dejavi</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>Fauziah Nuryanti</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>Linka Elvina</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>Nur Faiz Abdurrahman</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>Rangga Dwi Apriliana</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>Al Sirazzy Rapaelanda</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>Muhammad Ariyanto</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>Fadhil Setiawan</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>Forlan Jannatul Khaezan</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>Indri Mutiara Imelda</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>Akhlan Dzakwan Fadillah</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>32</td>
+              <td>Aridho Rizky Iskandar</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>Armahedi Prasetia Mukti</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>34</td>
+              <td>Hanifah Nur Faizah</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>35</td>
+              <td>Nabilla Nur Annisa</td>
+              <td>Anggota</td>
+            </tr>
+            <tr>
+              <td>36</td>
+              <td>Theo</td>
+              <td>Anggota</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- struktur End -->
+    </div>
+
+    <script src="/js/script_user.js"></script>
+  </body>
+</html>
