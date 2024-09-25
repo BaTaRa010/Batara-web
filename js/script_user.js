@@ -10,7 +10,7 @@ function searchUser() {
     "aisyah puji lestari": "users/aisyahPujiLestari.html",
     "akbar maulana hakim": "users/akbarMaulanaHakim.html",
     "akhlan dzakwan fadillah": "users/akhlanDzakwanFadillah.html",
-    "alfan athallah syafalla": "users/alfanAthallahSyafala.html",
+    "alfan athallah syafala": "users/alfanAthallahSyafala.html",
     "al sirazzy rapaelanda": "users/alSirazzyRapaelanda.html",
     "amara desfianti": "users/amaraDesfianti.html",
     "anton patoni": "users/antonPatoni.html",
